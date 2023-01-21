@@ -8,13 +8,10 @@ Box::Box() {
 }
 
 Box::Box(int width, int height, int length) {
-    if(width < 0 || height < 0 || length < 0){
-        throw "Negative Dimension";
-    }
+    setWidth(width);
+    setHeight(height);
+    setLength(length);
 
-    this->width = width;
-    this->height = height;
-    this->length = length;
 }
 
 double Box::getWidth() const {
