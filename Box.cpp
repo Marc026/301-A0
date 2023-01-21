@@ -56,5 +56,7 @@ double Box::getVolume() const {
 }
 
 void Box::resize(double factor) {
-
+    setWidth(factor*width);
+    setHeight(factor*height);
+    setLength(factor*length);
 }
