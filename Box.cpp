@@ -48,11 +48,11 @@ void Box::setLength(double length) {
 }
 
 double Box::getSurfaceArea() const {
-    return 0;
+    return 2*(width*height + width*length + height*length);
 }
 
 double Box::getVolume() const {
-    return 0;
+    return width*height*length;
 }
 
 void Box::resize(double factor) {
