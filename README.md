@@ -62,12 +62,12 @@ answers by modifying the README file. To modify the README, you can click the
     What is wrong with the following code snippet and why is it wrong? (1 
     points)
    
-    > Your answer here. 
+    > The if statement is missing its brackets ({}) to encompass the throw statement, and would otherwise not compile.  
     
     List two different ways you could fix the code snippet. (2 points)
    
-    > * Your answer here.
-    > * Your answer here.
+    > * Add curly brackets for the if statement
+    > * change the width = width; statement to point towards the private width variable to the width in the header file
 
 2.  Suppose you have the following code:
     ```c++
@@ -82,7 +82,7 @@ answers by modifying the README file. To modify the README, you can click the
 
     What value would be printed by the function 'foo' and why? (1 point)
 
-    > Your answer here.
+    > -1 as the int i =-1 is local to what is being outputted and not the for (int i).
 
     Suppose you have the following code:
     ```c++
@@ -97,7 +97,7 @@ answers by modifying the README file. To modify the README, you can click the
 
     What value would be printed by the function `foo2` and why? (2 point)
 
-    > Your answer here.
+    > 10 as it declares as -1 then redeclared as 0 and adds 1 until it outputs 10.
 
     Suppose you have the following code:
     ```c++
@@ -114,19 +114,19 @@ answers by modifying the README file. To modify the README, you can click the
     ```
     What value would be printed by the function `foo3` and why? (2 points)
     
-    > Your answer here.
+    > A random value as the first int i is declared with no value assigned to it.
     
 3.  What is the purpose of a default constructor? (1 point)
 
-    > Your answer here.
+    > To help initialize a member object and provide default values.
 
     What variables from the `Box` class should be set by the default constructor? (1 point)
 
-    > Your answer here.
+    > The private variables of double width, height, and length.
 
     In general, how do you determine the variables that should be initialized by a default constructor? (2 point)
 
-    > Your answer here.
+    > By any variables that are to be provided by the user or is declared.
 
 4.  Suppose the following code is used for the constructor of the box
     class:
@@ -141,14 +141,15 @@ answers by modifying the README file. To modify the README, you can click the
     What is wrong with the following code snippet and why is it wrong? (2 
     points)
 
-    > Your answer here.
+    > WHL is already declared with a double in the header file as private doubles, so it does not need to be declared
+      as a double again.
 
 5.  What would you need to do in order to fix the "undefined reference" error 
     reported by the compiler? (1 points)
     
     ![img.png](images/error.png)
     
-   > Your answer here.
+   > Declare the function in the header file for the code to reference to.
 
 6.  Suppose I had the following `CMakeList.txt`.
     
@@ -157,28 +158,28 @@ answers by modifying the README file. To modify the README, you can click the
     What executables would I find in the run configuration dropdown menu? (1 
     points) 
 
-   > Your answer here.
+   > hello_world and hello_test
 
 7.  Will the Catch2 tests run if you haven't implemented `Box.cpp`? (1 point)
 
-   > Your answer here.
+   > No
 
 8.  Should you add all the unversioned files when committing? (1 point)
     
-   > Your answer here.
+   > No
 
 9.  How often should you commit your assignment? (1 point)
 
-   > Your answer here
+   > As often as you can/Whenever a new function works
 
 10.  If you commit without pushing, will it still send the changes to the 
     online github repository? (1 point)
     
-   > Your answer here
+   > No
 
 11.  How often should you push your repository? (1 point)
 
-   > Your answer here
+   > As often as you can/Whenever a new function works
 
 12.  Suppose you read the following precondition/postcondition for a Path 
      object:
@@ -205,7 +206,7 @@ bool Path::CalculatePath(int startX, int startY);
 
 What is wrong with this precondition/postcondition comment (1 points)?
 
-    > Your answer here
+    > It described HOW to do the function but not what the function is in the pre/postconditions.
 
 Rewrite the precondition/postcondition correctly using the function description. (4 points)
 
@@ -218,10 +219,10 @@ Rewrite the precondition/postcondition correctly using the function description.
  * returns false.
  * 
  * Precondition:
- * Your answer here
+ * Calculate a path from X and Y to the destination.
  * 
  * Postcondition:
- * Your answer here
+ * Outputs true when a path is calculated, throw false if not.
  */
 bool Path::CalculatePath(int startX, int startY);
 ```
