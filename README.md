@@ -162,7 +162,7 @@ answers by modifying the README file. To modify the README, you can click the
 
 7.  Will the Catch2 tests run if you haven't implemented `Box.cpp`? (1 point)
 
-   > No
+   > Yes, the tests will execute and simply give back an error and report anything that fails.
 
 8.  Should you add all the unversioned files when committing? (1 point)
     
